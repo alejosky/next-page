@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    color: #222;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.layout {
+    max-height: 100vh;
+}
+
+.link {
+    color: #777;
+    text-decoration: none;
+    transition: color .5s;
+
+    &:hover,
+    &:focus{
+        color: initial;
+    }
+
+    &:visited {
+        color: #777;
+    }
+
+    + .link {
+        margin-left: 5px;
+    }
+}
+
+.muted {
+    color: #333
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+}
